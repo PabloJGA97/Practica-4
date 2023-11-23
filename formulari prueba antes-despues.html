@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="estils.css>
+    </head>
+    <body>
+        <form action="formulari_enviat.html">
+
+            <label for="namesurname">Nom i cognoms</label>
+            <input type="text" id="namesurname" name="namesurname" required>
+            <br>
+            <br>
+            <label for="mail">Correu</label>
+            <input type="email" id="mail" name="mail" required>
+            <br>
+            <br>
+            <label for="age">Edat</label>
+            <input type="number" id="age" name="age" required>
+            <br>
+            <br>
+            <label for="drop-down">Quin nivell d'estudis tens?</label>
+            <select name="drop-down" id="drop-down">
+                <option value="phd">Doctorat</option>
+                <option value="master">Màster</option>
+                <option value="major">Universitat</option>
+                <option value="high_technician">FP superior/CP Nivell 4</option>
+                <option value="baccaularate">Batxillerat/CP Nivell 3</option>
+                <option value="technician">Grau Mitjà/CP Nivell 2</option>
+                <option value="graduate">ESO</option>
+                <option value="no_studies">sense estudis reglats i/o amb experiència laboral</option> 
+            </select>
+            <br>
+            <br>
+            <label for="Interested">Quin creus que és el teu grau cultural?</label><br>
+            <input type="checkbox" id="HighCulture" name="HighCulture" value="HighCulture">
+            <label for="HighCulture">Tinc molt bona cultura general</label><br>
+            <input type="checkbox" id="AverageCulture" name="AverageCulture" value="AverageCulture">
+            <label for="AverageCulture">Tinc bona cultura general però m'agradaria endinsar-me més</label><br>
+            <input type="checkbox" id="Interested" name="Interested" value="Interested" checked>
+            <label for="Interested">Estic interessat, però no en tinc gaire cultura</label><br>
+            <input type="checkbox" id="uninterested" name="uninterested" value="uninterested">
+            <label for="uninterested">No m'ha interessat mai gaire</label><br>
+            <br>
+            <br>
+            <label for="culture">En quins temes estàs interessat?</label><br>
+            <input type="radio" id="politics" name="politics" value="politics">
+            <label for="politics">Política nacional</label><br>
+            <input type="radio" id="in_politics" name="in_politics" value="in_politics">
+            <label for="in_politics">Política internacional</label><br>
+            <input type="radio" id="economy" name="economy" value="economy">
+            <label for="economy">Economia</label><br>
+            <input type="radio" id="culture" name="culture" value="culture" checked>
+            <label for="culture">Cultura</label>
+            <br>
+            <br>
+            <label for="opinion">Què opines de la notícia?</label><br>
+            <textarea placeholder="No responguis amb sí o no. Utilitza connectors distributius i de contrast per donar una opinió estructurada i contrastada." id="opinion" name="opinion" required></textarea><br>
+            <br>
+            <input type="submit" value="Envia">
+        </form>
+    </body>
+</html>

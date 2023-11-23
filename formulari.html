@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="estils.css">
+    </head>
+    <body>
+        <form action="formulari_enviat.html">
+            <!-- atribut action necessari perquè al fer clic al submit ens redirigeixi a un hipervincle en concret  -->
+            <h1>Subscriu-te al butlletí</h1>
+            <label id="wording">Informació personal bàsica</label>
+            <br>
+            <br>
+            <label for="namesurname">Nom i cognoms</label>
+            <input type="text" id="namesurname" name="namesurname" class="short" required>  <!-- l'atribut required fa obligatori completar el camp per enviar el formulari amb el submit  -->  
+            <!-- 
+                l'atribut name permetrà identificar la informació quan enviem
+                 els formularis per internet i no de forma local 
+             -->  
+            <br>
+            <br>
+            <label for="mail">Correu</label>
+            <input type="email" id="mail" name="mail" class="short" required> <!-- el type email fa que el camp requereixi d'una arroba @ i text abans i després d'ella  -->
+            <br>
+            <br>
+            <label for="age">Edat</label>
+            <input type="number" id="age" name="age" required> <!-- type number només deixa posar números al camp  -->
+            <br>
+            <br>
+            <label id="wording" for="drop-down">Quin nivell d'estudis tens?</label> 
+            <!-- el for és una opció d'accessibilitat que al fer clic a sobre de 
+                l'etiqueta selecciona automàticament el camp a modificat -->
+            <select name="drop-down" id="drop-down">
+                <option value="phd">Doctorat</option>
+                <option value="master">Màster</option>
+                <option value="major">Universitat</option>
+                <option value="high_technician">FP superior/CP Nivell 4</option>
+                <option value="baccaularate">Batxillerat/CP Nivell 3</option>
+                <option value="technician">Grau Mitjà/CP Nivell 2</option>
+                <option value="graduate">ESO</option>
+                <option value="no_studies">sense estudis reglats i/o amb experiència laboral</option> 
+            </select>
+            <br>
+            <br>
+            <label id="wording"  for="Interested">Quin creus què és el teu grau cultural?</label>
+            <br>
+            <br>
+            <input type="checkbox" id="HighCulture" name="HighCulture" value="HighCulture">
+            <label for="HighCulture">Tinc molt bona cultura general</label><br>
+            <input type="checkbox" id="AverageCulture" name="AverageCulture" value="AverageCulture">
+            <label for="AverageCulture">Tinc bona cultura general però m'agradaria endinsar-me més</label><br>
+            <input type="checkbox" id="Interested" name="Interested" value="Interested" checked> <!-- checked deixa marcada una opció per defecte  -->
+            <label for="Interested">Estic interessat, però no en tinc gaire cultura</label><br>
+            <input type="checkbox" id="uninterested" name="uninterested" value="uninterested">
+            <label for="uninterested">No m'ha interessat mai gaire</label><br>
+            <br>
+            <br>
+            <label id="wording" for="culture">En quins temes estàs interessat?</label>
+            <br>
+            <br>
+            <input type="radio" id="politics" name="politics" value="politics">
+            <label for="politics">Política nacional</label><br>
+            <input type="radio" id="in_politics" name="in_politics" value="in_politics">
+            <label for="in_politics">Política internacional</label><br>
+            <input type="radio" id="economy" name="economy" value="economy">
+            <label for="economy">Economia</label><br>
+            <input type="radio" id="culture" name="culture" value="culture" checked>
+            <label for="culture">Cultura</label>
+            <!-- 
+                La diferència entre checkbox i radio és que checkbox et deixa escollir més d'una opció i
+                radio només et deixa escollir una d'un ventall d'opcions
+              -->
+            <br>
+            <br>
+            <label id="wording" for="opinion">Què opines de la notícia?</label>
+            <br>
+            <br>
+            <textarea placeholder="No responguis amb sí o no. Utilitza connectors distributius (ja sigui [...] ja sigui; tant [...] com...) i de contrast (no obstant, per contra...) per donar una opinió estructurada i contrastada." id="opinion" name="opinion" rows="8" cols="50" required></textarea><br>
+            <!-- 
+                rows (files) i col (columnes) permeten estandaritzar el tamany del camp a tots els navegadors per tant és més preferible que utiiltzar width i height
+                placeholder ensenya un text transparent que desapareix al fer clic al cmap i que dona indicacions breus del què ha d'escriure l'usuari a dins del camp
+              -->
+            <br>
+            <label for="button_submit"></label>
+            <input type="submit" value="Envia" id="button_submit">
+            <!-- 
+            el value dona nom al botó submit com si fos un label. El type submit es diferencia de button en què button fa 
+            ús de Javascript per personalitzar-ho
+            -->
+        </form>
+    </body>
+</html>

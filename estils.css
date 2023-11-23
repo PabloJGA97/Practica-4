@@ -1,0 +1,39 @@
+body{
+    font-family: Helvetica, "Times New Roman", Arial;  /* és important introduir diverses fonts per si falla la primera (què és la prioritària)
+    ja que potser no totes les webs o navegadors són compatibles */
+    background-color:rgba(45, 175, 62, 0.431);
+}
+
+.short{
+    width: 300px;
+}
+
+#age{
+    width: 100px;
+}
+h1{
+    color: rgb(226, 174, 40);
+}
+#button_submit{
+    width: 150px;
+    height: 45px;
+    background-color: rgba(207, 35, 35, 0.856);
+}
+#button_submit:hover{
+    background-color: rgb(238, 222, 5);
+    /* :hover fa que mentre el cursor estigui posicionat sobre un element, canviï alguna propietat d'aquest com el color de fons, per exemple*/
+}
+
+input[type=text]:focus, input[type=email]:focus,input[type=number]:focus{
+    background-color: silver;
+    /* 
+    Aqui s'ha utilitzat un selector múltiple amb la coma per evitar fer múltiples línees. Els claudàtors [] permeten seleccionar un atribut i valor
+    específics d'una propietat.
+    :focus, en el cas de les propietats que permetin introduir text, doncs al fer click per introduir text fa que canvii alguna propietat de l'element,
+    com pot ser la mida, l'alçada, el color de fons, etc...
+     */
+}
+
+#wording{
+    font-weight: bold;
+}
